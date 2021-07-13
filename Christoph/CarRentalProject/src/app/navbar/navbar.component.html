@@ -1,0 +1,7 @@
+<div class="containerNav">
+  <p class="btn" (click)="donate10()">Donate 10€</p>
+  <p class="donated">{{ donate }} €</p>
+  <h1 class="vip" [style.display]="donate > 200 ? 'block' : 'none'">
+    YOU ARE A <br />👑 V.I.P 👑
+  </h1>
+</div>

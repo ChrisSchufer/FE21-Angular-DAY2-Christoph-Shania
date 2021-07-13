@@ -1,0 +1,50 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.row > label {
+  width: 100%;
+}
+
+.row > input {
+  padding: 7px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 20px;
+}
+
+.one {
+  grid-column: 2/3;
+}
+.two {
+  grid-column: 2/3;
+}
+.three {
+  grid-column: 2/3;
+}
+.four {
+  grid-column: 2/3;
+}
+.btn {
+  width: 100%;
+  background: rgb(0, 33, 48);
+  border: none !important;
+  padding: 15px !important;
+  transition: all 150ms ease-in;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.btn:hover {
+  background: rgb(0, 174, 255);
+  color: black !important;
+}

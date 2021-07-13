@@ -1,0 +1,55 @@
+.containerNav {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  background: rgb(173, 173, 173);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    ". . . . ."
+    ". vip vip vip ."
+    ". vip vip vip ."
+    ". vip vip vip ."
+    ". vip vip vip ."
+    ". vip vip vip ."
+    ". . . . ."
+    ". btn . donated ."
+    ". . . . ."
+    ". . . . .";
+}
+
+.btn {
+  grid-area: btn;
+  background: rgb(97, 97, 255);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid rgb(44, 44, 255);
+  border-radius: 8px;
+  cursor: pointer;
+  justify-self: flex-start;
+}
+
+.donated {
+  grid-area: donated;
+  background: rgb(0, 151, 8);
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(0, 122, 0);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+.vip {
+  grid-area: vip;
+  width: 100%;
+  background: rgb(255, 251, 0);
+  border: 5px solid rgb(207, 204, 0);
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 25px;
+}
